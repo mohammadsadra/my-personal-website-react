@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import './contact.css';
 
 const Contact = () => {
     const [subjectValue, setSubjectValue] = useState('');
@@ -16,7 +17,7 @@ const Contact = () => {
         setTextAreaValue(event.target.value);
         console.log(event.target.value);
     };
-    
+
     const handleSubmit = (event) =>{
         console.log(event.target.value);
     };
