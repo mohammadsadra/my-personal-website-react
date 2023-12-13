@@ -16,7 +16,7 @@ const Home = () => {
                     </div>
                     <span className="progress-text">70%</span>
                 </div>
-                {/* Repeat for other skills */}
+
                 <div className="skill">
                     <label htmlFor="python">Python</label>
                     <div className="progress-bar-container">
@@ -32,7 +32,6 @@ const Home = () => {
                     </div>
                     <span className="progress-text">90%</span>
                 </div>
-                {/* ... add other skills as needed */}
             </div>
         </div>
     );
