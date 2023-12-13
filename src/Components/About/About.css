@@ -1,0 +1,72 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.profile-circle img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 5px solid #56B4E9;
+    margin-bottom: 30px;
+    /* Transition for smooth loading */
+    opacity: 0;
+    animation: fade-in 1s forwards;
+    animation-delay: 0.5s;
+    background-size: 300%;
+}
+
+.about-details {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.detail-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 150px;
+    margin: 0 10px;
+    /* Animation */
+    opacity: 0;
+    animation: fade-in 1s forwards;
+    animation-delay: 0.5s;
+}
+
+.detail-item i.icon {
+    font-size: 24px; /* Adjust size as needed */
+    margin-bottom: 10px;
+}
+
+.cv-button {
+    display: inline-block; /* Needed to allow width and height for an anchor element */
+    background-color: #56B4E9;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    text-decoration: none; /* Removes underline from the anchor tag */
+    /* Transition for smooth hover effect */
+    transition: background-color 0.3s;
+    /* ... other styles ... */
+}
+
+.cv-button:hover {
+    background-color: #3498db; /* Darker shade on hover */
+}
+
+/* Reuse the keyframes from the Home component */
+@keyframes fade-in {
+    to {
+        opacity: 1;
+    }
+}

@@ -5,32 +5,59 @@ const Contact = () => {
     const [subjectValue, setSubjectValue] = useState('');
     const [emailValue, setEmailValue] = useState('');
     const [textAreaValue, setTextAreaValue] = useState('');
-    const handleChangeSubject = (event) =>{
+
+    const handleChangeSubject = (event) => {
         setSubjectValue(event.target.value);
-        console.log(event.target.value);
-    };
-    const handleChangeEmail = (event) =>{
-        setEmailValue(event.target.value);
-        console.log(event.target.value);
-    };
-    const handleChangeTextArea = (event) =>{
-        setTextAreaValue(event.target.value);
-        console.log(event.target.value);
     };
 
-    const handleSubmit = (event) =>{
-        console.log(event.target.value);
+    const handleChangeEmail = (event) => {
+        setEmailValue(event.target.value);
     };
+
+    const handleChangeTextArea = (event) => {
+        setTextAreaValue(event.target.value);
+    };
+
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        // Simple email validation regex
+        const emailRegex = /\S+@\S+\.\S+/;
+        if (!emailRegex.test(emailValue)) {
+            alert('Please enter a valid email address.');
+            return;
+        }
+        // You can replace this alert with a more sophisticated message or a modal
+        alert(`Thank you, ${subjectValue}, for your message!`);
+        // Clear the form (optional)
+        setSubjectValue('');
+        setEmailValue('');
+        setTextAreaValue('');
+    };
+
     return (
         <div className="Contact">
             <div className="formControl">
-                <input onChange={handleChangeSubject} type="text" placeholder="Subject"></input>
+                <input
+                    value={subjectValue}
+                    onChange={handleChangeSubject}
+                    type="text"
+                    placeholder="Subject"
+                />
             </div>
             <div className="formControl">
-                <input onChange={handleChangeEmail} type="email" placeholder="Email"></input>
+                <input
+                    value={emailValue}
+                    onChange={handleChangeEmail}
+                    type="email"
+                    placeholder="Email"
+                />
             </div>
             <div className="formControl">
-                <textarea onChange={handleChangeTextArea} placeholder="Your request here"></textarea>
+                <textarea
+                    value={textAreaValue}
+                    onChange={handleChangeTextArea}
+                    placeholder="Your request here"
+                />
             </div>
             <div className="formControl">
                 <button onClick={handleSubmit}>Submit</button>
@@ -39,4 +66,4 @@ const Contact = () => {
     );
 }
 
-export default Contact
+export default Contact;
