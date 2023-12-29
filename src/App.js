@@ -1,4 +1,3 @@
-import './App.css';
 import Layout from './Components/Layout/Layout';
 import About from './Components/About/About';
 import Contact from './Components/Contact/Contact';
@@ -6,10 +5,11 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './Components/Home/Home';
 
 
+
 function App() {
-  
+
   return (
-    <div className="App">
+    <div className="p-2">
       <Router>
       <Layout>
          <Routes>
@@ -20,7 +20,7 @@ function App() {
       </Layout>
     </Router>
     </div>
-    
+
   );
 }
 

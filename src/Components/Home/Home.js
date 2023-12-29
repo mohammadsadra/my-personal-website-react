@@ -3,9 +3,9 @@ import './Home.css';
 
 const Home = () => {
     return (
-        <div className="home">
+        <div className="home d-flex flex-column justify-content-center align-items-center text-center p-1">
             <h1 className="fade-in">I'm MohammadSadra Haeri</h1>
-            <img className="profile-image scale-in-center" src="https://imohammadsadra.ir/img/about-me.jpeg" alt="MohammadSadra Haeri" />
+            <img className="profile-image-animation scale-in-center rounded-5 mt-2 mb-2 object-fit-cover" src="https://imohammadsadra.ir/img/about-me.jpeg" alt="MohammadSadra Haeri" />
             <p className="fade-in">I'm a Front-End Developer @MCI</p>
             <p className="fade-in">Computer Engineering @IUST</p>
             <div className="skills-container">

@@ -1,11 +1,16 @@
 import React from 'react';
 import './About.css';
+import Slideshow from "../Slideshow/slideshow";
 
 const About = () => {
     return (
         <div className="about">
-            <div className="profile-circle">
-                <img src="https://imohammadsadra.ir/img/home-bg.jpg" alt="MohammadSadra Haeri" />
+            {/*<div className="profile-circle">*/}
+            {/*    <img src="https://imohammadsadra.ir/img/home-bg.jpg" alt="MohammadSadra Haeri" />*/}
+            {/*</div>*/}
+
+            <div>
+                <Slideshow/>
             </div>
             <h1 className="fade-in">MohammadSadra Haeri</h1>
             <p className="fade-in">I'm a web developer at idea varzan system and study at AmirKabir university</p>

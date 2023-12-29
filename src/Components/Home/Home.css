@@ -1,21 +1,5 @@
-.home {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    text-align: center;
-    padding: 20px;
-}
-
-.profile-image {
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    margin-top: 20px;
-    margin-bottom: 30px;
-    /* Animation */
+.profile-image-animation {
+    width: 15rem;
     opacity: 0;
     transform: scale(0);
     animation: scale-in-center 0.5s forwards;
@@ -48,7 +32,7 @@
 .skills-container {
     width: 80%;
     max-width: 600px;
-    margin: 40px auto;
+    margin: 20px auto;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);

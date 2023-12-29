@@ -60,7 +60,7 @@ const Contact = () => {
                 />
             </div>
             <div className="formControl">
-                <button onClick={handleSubmit}>Submit</button>
+                <button type="button" className="btn btn-primary" onClick={handleSubmit}>Submit</button>
             </div>
         </div>
     );
