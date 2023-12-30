@@ -1,8 +1,8 @@
 import React from 'react';
 import ImageGallery from "react-image-gallery";
-import picture1 from "./1.PNG";
-import picture2 from "./2.JPG";
-import picture3 from "./3.JPG";
+import picture1 from "./1.jpeg";
+import picture2 from "./2.jpeg";
+import picture3 from "./3.jpeg";
 
 const Slideshow = () => {
     const images = [
